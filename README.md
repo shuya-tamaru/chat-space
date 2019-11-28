@@ -7,7 +7,7 @@
 |email|string|null: fslse, unique: true|
 |password|string|null: false|
 ### Association
-- has_many :comments
+- has_many :messages
 - has_many :groups_users
 - has_many :groups, through:  :groups_users
 
