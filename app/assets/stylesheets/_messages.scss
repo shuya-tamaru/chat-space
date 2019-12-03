@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+// 色の定義
+$side-bar-header-color: #253141;
+$btn-color:#38aef0;
+
+.wrapper{
+  display: flex;
+}
+
+.side-bar {
+  font-weight: bold;
+  width: 300px;
+  height: 100vh;
+  &__header{
+    width: 300px;
+    height: 100px;
+    background-color: $side-bar-header-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__box {
+      width: 260px;
+      height: 20px;
+      background-color: $side-bar-header-color;
+      display: flex;
+      justify-content: space-between;
+      &__user-name {
+        height: 100%;
+        line-height:20px ;
+        background-color: $side-bar-header-color;
+        color:white;
+      font-size: white;
+      }
+      &__edit-box {
+        height: 100%;
+        line-height:20px ;
+        width: 60px;
+        background-color: $side-bar-header-color;
+        display:flex;
+        justify-content: flex-end;
+        .edit-box__btn {
+          text-decoration: none;
+          color:white;
+        }
+        .edit-box__btn--cog{
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  &__group-list{
+    width: 300px;
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 0,20px;
+    .group-link{
+      display: inline-block;
+      width: 100%;
+      height: 91px;
+      text-decoration: none;
+    }
+    .group-box {
+      height: 91px;
+      color: white;
+      &__name {
+        font-size: 15px;
+        margin:20px 20px 5px 20px;
+      }
+      &__comment {
+        font-size: 11px;
+        margin:0px 20px 40px 20px;
+      }
+    }
+  }
+}
+
+// チャットメインの実装
+.chat-main {
+  width: calc(100vw - 300px);
+  height: 100vh;
+  &__group-info{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    &__name-box {
+      .group-name {
+        font-size: 20px;
+        margin-top: 35px ;
+        color:#333333
+      }
+      .group-member {
+        font-size: 12px;
+        margin-top: 15px ;
+        color:#999999
+      }
+    }
+    &__edit-box {
+      .edit-btn {
+        text-decoration: none;
+      }
+      .edit-btn-box {
+        height: 40px;
+        margin-top: 28px;
+        border: solid 1px $btn-color;
+        padding: 0 20px 0 20px;
+        margin-top: 28px;
+        color: $btn-color;
+        line-height: 40px;
+      }
+    }
+  }
+  &__message-list {
+    background-color: #fafafa;
+    width: 100%;
+    height: calc(100vh - 100px - 90px);
+    &__box {
+      padding: 35px 0 11px 40px;
+      &__name {
+        display: flex;
+        margin-bottom:12px;
+        .member-name {
+          font-size: 16px;
+          color:#333333;
+        }
+        .post-date {
+          font-size: 12px;
+          color:#999999;
+          padding-left: 10px;
+        }
+      }
+      &__comment {
+        font-size: 14px;
+        color:#434A54;
+      }
+    }
+  }
+  &__message-form{
+    background-color: #d2d2d2;
+    width: 100%;
+    height: 90px;
+    padding: 20px 40px;
+    .post-form {
+      display:flex;
+      justify-content: space-between;
+      width: 100%;
+      &__box{
+        display: flex;
+        height: 50px;
+        width: 100%;
+        position: relative;
+        &__text {
+          margin-left: 10px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          border: none;
+        }
+        &__image{
+          cursor: pointer;
+          color:black;
+          margin: auto 0;
+          position: absolute;
+          right:10px;
+          top:10px;
+          font-size: 1.3rem;
+          &__field {
+            display: none;
+          }
+        }
+        
+      }
+      .post-btn {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        background-color: $btn-color;
+        color:white;
+        cursor: pointer;
+        margin-left:15px ;
+      }
+    }
+  }
+}
+

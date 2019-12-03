@@ -1,1 +1,26 @@
-koo
+.side-bar
+  .side-bar__header
+    .side-bar__header__box
+      %p.side-bar__header__box__user-name
+        tamaru
+      %ul.side-bar__header__box__edit-box
+        %li.side-bar__header__box__edit-box__new-group
+          =link_to "#", class: "edit-box__btn edit-box__btn--edit" do
+            = icon('fas','edit')
+        %li.side-bar__header__box__edit-box__group-name
+          =link_to "#", class: "edit-box__btn edit-box__btn--cog" do
+            = icon('fas','cog')
+  .side-bar__group-list
+    =link_to "#", class: "group-link" do
+      .group-box
+        %p.group-box__name
+          techcamp
+        %p.group-box__comment
+          まだコメントはありません
+    =link_to "#", class: "group-link" do
+      .group-box
+        %p.group-box__name
+          techcamp
+        %p.group-box__comment
+          まだコメントはありません
+
