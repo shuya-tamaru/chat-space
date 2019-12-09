@@ -1,0 +1,20 @@
+.side-bar
+  .side-bar__header
+    .side-bar__header__box
+      %p.side-bar__header__box__user-name
+        = current_user.name
+      %ul.side-bar__header__box__edit-box
+        %li.side-bar__header__box__edit-box__new-group
+          =link_to new_group_path(current_user) , class: "edit-box__btn edit-box__btn--edit" do
+            = icon('fas','edit')
+        %li.side-bar__header__box__edit-box__group-name
+          =link_to edit_user_path(current_user), class: "edit-box__btn edit-box__btn--cog" do
+            = icon('fas','cog')
+  .side-bar__group-list
+    - current_user.groups.each do |group|
+      .group-box
+        = link_to '#', class: "group-link" do
+          .group-box__name
+            = group.name
+          .group-box__comment
+            まだコメントはありません
