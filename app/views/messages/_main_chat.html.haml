@@ -27,10 +27,11 @@
       %p.chat-main__message-list__box__comment
         おはよう！
   .chat-main__message-form
-    %form.post-form
-      .post-form__box
-        %input{type: "text", placeholder: "type a message", class: "post-form__box__text" }
-        %label{class: "post-form__box__image"}
-          = icon('fas', 'image')
-          %input{type: "file", class: "post-form__box__image__field"}
-      %input{type: "submit", value: "Send", class: "post-btn"}
+    .post-form__box
+      = form_for [@group, @message] do |f|
+        = f.text_field :body, class: 'post-form__box__text', placeholder: 'type a message'
+        .post-form__box__image
+          = f.label :image, class: 'post-form__box__image__label' do
+            = icon('fas', 'image')
+            = f.file_field :image, class: 'post-form__box__image__label__field'
+        = f.submit 'Send', class: 'post-form__box__post-btn'
