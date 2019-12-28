@@ -122,6 +122,7 @@ $btn-color:#38aef0;
     background-color: #fafafa;
     width: 100%;
     height: calc(100vh - 100px - 90px);
+    overflow-y: auto;
     &__box {
       padding: 35px 0 11px 40px;
       &__name {
