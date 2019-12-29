@@ -21,7 +21,8 @@ $(function(){
       }
     })
     .fail(function() {
-      console.log('error');
+      alert("メッセージ送信に失敗しました");
+      $('.post-form__box__post-btn').prop("disabled", false);    
     });
   };
 
