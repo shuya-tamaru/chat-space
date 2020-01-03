@@ -43,7 +43,7 @@ $(function(){
     })
     .done(function(users) {
       search_list.empty();
-      if (users.length !== 0) {
+      if (users.length !== 0 ) {
         users.forEach(function(user){
           appendUser(user);
         });
