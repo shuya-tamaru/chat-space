@@ -1,8 +1,20 @@
-![mercari](https://i.gyazo.com/a4179ee3f8d0f04ecf68fe22a4e22c11.png)
-
-
 <h1 align="center">Chat app</h1>
 <br>
+
+![chatspace (1)](https://user-images.githubusercontent.com/57956439/79837700-da86a880-83ec-11ea-9c8d-6803603a1cd7.gif)
+
+
+# 概要
+テキストと画像の投稿機能をもつチャットアプリです。スクール課題にて製作しました。
+</br>
+基本機能：
+ユーザー新規登録・ログイン・ログアウト
+画像・コメント投稿機能（非同期通信）
+チャットグループ作成・ユーザーの追加
+チャットグループへのユーザー追加時のユーザー検索（インクリメンタルサーチ）
+</br>
+
+# 使用技術
 <p align="center">
 <a>　</a>
 <img src="https://user-images.githubusercontent.com/39142850/71774533-1ddf1780-2fb4-11ea-8560-753bed352838.png" width="70px;" />
@@ -18,19 +30,7 @@
 <a><img src="https://user-images.githubusercontent.com/39142850/71774786-37825e00-2fb8-11ea-8b90-bd652a58f1ad.png" height="60px;" />
 </p><br>
 
-# 概要
-テキストと画像の投稿機能をもつチャットアプリ
-</br></br>
-
-基本機能：
-ユーザー新規登録・ログイン・ログアウト</br>
-画像・コメント投稿機能（非同期通信）</br>
-チャットグループ作成・ユーザーの追加</br>
-チャットグループへのユーザー追加時のユーザー検索（インクリメンタルサーチ）
-
-
-
-<br><br><br><br>
+</br>
 
 # DB design
 
